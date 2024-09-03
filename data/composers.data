@@ -1,70 +1,69 @@
-Beethoven
-Bach
-Stravinsky
-Wagner
-Beethoven
-Brahms
-Mahler
-Dvořák
-Mozart
-Mussorgsky
-Schubert
-Debussy
-Tchaikovsky
-Fauré
-Mendelssohn
-Berlioz
-Vivaldi
-Rachmaninoff
-Shostakovich
-Sibelius
-Handel
-Rimsky-Korsakov
-Berg
-Haydn
-Prokofiev
-Ravel
-Bartók
-Schumann
-Strauss, R.
-Tallis
-Liszt
-Messiaen
-Bruckner
-Elgar
-Grieg
-Holst
-Palestrina
-Saint-Saëns
-Gershwin
-Monteverdi
-Bizet
-Bruch
-Chopin
-Barber
-Borodin
-Copland
-Smetana
-Rodrigo
-Schoenberg
-Janáček
-Josquin
-Kodály
-Schnittke
-Franck
-Machaut
-Takemitsu
-Verdi
-Biber
-Gesualdo
-Lalo
-Alwyn
-Nielsen
-Puccini
-Vaughan Williams
-Crumb
-Górecki
-Albéniz
-Canteloube
-Hindemith
-Respighi
+;'Ludwig van Beethoven'; 'German'; 'Classical/Romantic';
+;'Johann Sebastian Bach'; 'German'; 'Baroque';
+;'Igor Stravinsky'; 'Russian'; '20th Century';
+;'Richard Wagner'; 'German'; 'Romantic';
+;'Johannes Brahms'; 'German'; 'Romantic';
+;'Gustav Mahler'; 'Austrian'; 'Late Romantic';
+;'Antonín Dvořák'; 'Czech'; 'Romantic';
+;'Wolfgang Amadeus Mozart'; 'Austrian'; 'Classical';
+;'Modest Mussorgsky'; 'Russian'; 'Romantic';
+;'Franz Schubert'; 'Austrian'; 'Romantic';
+;'Claude Debussy'; 'French'; 'Impressionist';
+;'Pyotr Ilyich Tchaikovsky'; 'Russian'; 'Romantic';
+;'Gabriel Fauré'; 'French'; 'Romantic/Impressionist';
+;'Felix Mendelssohn'; 'German'; 'Romantic';
+;'Hector Berlioz'; 'French'; 'Romantic';
+;'Antonio Vivaldi'; 'Italian'; 'Baroque';
+;'Sergei Rachmaninoff'; 'Russian'; 'Romantic';
+;'Dmitri Shostakovich'; 'Russian'; '20th Century';
+;'Jean Sibelius'; 'Finnish'; 'Romantic';
+;'George Frideric Handel'; 'German/British'; 'Baroque';
+;'Nikolai Rimsky-Korsakov'; 'Russian'; 'Romantic';
+;'Alban Berg'; 'Austrian'; 'Second Viennese School';
+;'Joseph Haydn'; 'Austrian'; 'Classical';
+;'Sergei Prokofiev'; 'Russian'; '20th Century';
+;'Maurice Ravel'; 'French'; 'Impressionist';
+;'Béla Bartók'; 'Hungarian'; '20th Century';
+;'Robert Schumann'; 'German'; 'Romantic';
+;'Richard Strauss'; 'German'; 'Romantic/Modern';
+;'Thomas Tallis'; 'English'; 'Renaissance';
+;'Franz Liszt'; 'Hungarian'; 'Romantic';
+;'Olivier Messiaen'; 'French'; '20th Century';
+;'Anton Bruckner'; 'Austrian'; 'Romantic';
+;'Edward Elgar'; 'British'; 'Romantic';
+;'Edvard Grieg'; 'Norwegian'; 'Romantic';
+;'Gustav Holst'; 'British'; '20th Century';
+;'Giovanni Pierluigi da Palestrina'; 'Italian'; 'Renaissance';
+;'Camille Saint-Saëns'; 'French'; 'Romantic';
+;'George Gershwin'; 'American'; '20th Century';
+;'Claudio Monteverdi'; 'Italian'; 'Baroque/Renaissance';
+;'Georges Bizet'; 'French'; 'Romantic';
+;'Max Bruch'; 'German'; 'Romantic';
+;'Frédéric Chopin'; 'Polish'; 'Romantic';
+;'Samuel Barber'; 'American'; '20th Century';
+;'Alexander Borodin'; 'Russian'; 'Romantic';
+;'Aaron Copland'; 'American'; '20th Century';
+;'Bedřich Smetana'; 'Czech'; 'Romantic';
+;'Joaquín Rodrigo'; 'Spanish'; '20th Century';
+;'Arnold Schoenberg'; 'Austrian'; 'Second Viennese School';
+;'Leoš Janáček'; 'Czech'; '20th Century';
+;'Josquin des Prez'; 'French'; 'Renaissance';
+;'Zoltán Kodály'; 'Hungarian'; '20th Century';
+;'Alfred Schnittke'; 'Russian'; '20th Century';
+;'César Franck'; 'Belgian'; 'Romantic';
+;'Guillaume de Machaut'; 'French'; 'Medieval';
+;'Toru Takemitsu'; 'Japanese'; '20th Century';
+;'Giuseppe Verdi'; 'Italian'; 'Romantic';
+;'Heinrich Ignaz Franz Biber'; 'Bohemian'; 'Baroque';
+;'Carlo Gesualdo'; 'Italian'; 'Renaissance';
+;'Édouard Lalo'; 'French'; 'Romantic';
+;'William Alwyn'; 'British'; '20th Century';
+;'Carl Nielsen'; 'Danish'; '20th Century';
+;'Giacomo Puccini'; 'Italian'; 'Romantic';
+;'Ralph Vaughan Williams'; 'British'; '20th Century';
+;'George Crumb'; 'American'; '20th Century';
+;'Henryk Górecki'; 'Polish'; '20th Century';
+;'Isaac Albéniz'; 'Spanish'; 'Romantic/Impressionist';
+;'Joseph Canteloube'; 'French'; '20th Century';
+;'Paul Hindemith'; 'German'; '20th Century';
+;'Ottorino Respighi'; 'Italian'; '20th Century');
