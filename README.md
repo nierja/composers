@@ -7,7 +7,7 @@
 SQLite database of classical music composers and their works. Simple installation via **Docker** Image. Written in Python using `SQLalchemy` module for database engine and `sqlite3` package that implements the SQLite interface.
 
 <div style="text-align: center;">
-    <img src="img/d1.png" alt="db schema" width="750"/>
+    <img src="img/d1.png" alt="db schema" width="800"/>
 </div>
 
 ## Installation and usage
@@ -37,7 +37,7 @@ Now that the app runs, you can execute queries.
 * Give me all composers and data about them:
 
     ```bash
-    $ curl -X POST -F 'query=SELECT * FROM composers;' http://localhost:5000/query | jq
+    $ curl -X POST -F 'query=SELECT * FROM composers;' http://localhost:8080/query | jq
     {
     "result": [
         [
@@ -52,7 +52,7 @@ Now that the app runs, you can execute queries.
 * Get the number of works published by each composer:
 
     ```bash
-    $ curl -X POST -F 'query=SELECT composers.name, COUNT(works.id_work) AS work_count FROM composers JOIN works ON composers.id_composer = works.id_composer GROUP BY composers.name;' http://localhost:5000/query | jq
+    $ curl -X POST -F 'query=SELECT composers.name, COUNT(works.id_work) AS work_count FROM composers JOIN works ON composers.id_composer = works.id_composer GROUP BY composers.name;' http://localhost:8080/query | jq
     ...
         [
       "Béla Bartók",
