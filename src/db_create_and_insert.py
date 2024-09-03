@@ -3,13 +3,21 @@ from db_entities import Base, Composer, Work, Publisher, Edition, WorksEditions
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine('sqlite:///classical_music.db') # global SQLite engine
-Session = sessionmaker(bind=engine)                    # global DB session
-Base.metadata.create_all(engine)
-print("Database created!")
+DB_PATH = 'classical_music.db'
 
-def populate_db_from_files():
-    session = Session()
+def delete_db_if_exists():
+    if os.path.exists(DB_PATH):
+        os.remove(DB_PATH)
+        print(f"Deleted deprecated {DB_PATH}!")
+
+def create_db():
+    engine = create_engine(f'sqlite:///{DB_PATH}')
+    Base.metadata.create_all(engine)
+    print("Database created!")
+    return engine
+
+def populate_db_from_files(engine):
+    session = sessionmaker(bind=engine)()
 
     # handle data paths
     data_dir = 'data'
@@ -53,14 +61,15 @@ def populate_db_from_files():
 
     # works
     with open(works_file, 'r') as file:
-        composer_map = {composer.name: composer.id_composer for composer in session.query(Composer).all()}
+        composer_map = {composer.name.split()[-1]: composer.id_composer for composer in session.query(Composer).all()}
         for line in file:
             parts = line.strip().split(';')
             if len(parts) >= 3:
-                composer_name = parts[1].strip()
-                title = parts[2].strip().strip("'")
-                publication_year = parts[3].strip().strip("'") if len(parts) > 3 else None
-                id_composer = composer_map.get(composer_name)
+                composer_last_name = parts[0].strip()
+                title = parts[1].strip().strip("'")
+                publication_year = parts[2].strip().strip("'") if len(parts) > 3 else None
+
+                id_composer = composer_map.get(composer_last_name)
                 if id_composer:
                     work = Work(id_composer=id_composer, title=title, publication_year=publication_year)
                     session.add(work)
@@ -76,10 +85,13 @@ def populate_db_from_files():
                 session.add(works_editions)
 
     session.commit()
+    session.close()
     print("Database inserted into!")
 
 def main():
-    populate_db_from_files()
+    delete_db_if_exists()
+    engine = create_db()
+    populate_db_from_files(engine)
 
 if __name__ == '__main__':
     main()
