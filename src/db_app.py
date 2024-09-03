@@ -8,12 +8,11 @@ DATABASE = 'classical_music.db'
 
 def query_db(query, args=(), one=False):
     """Function to query the SQLite database."""
-    con = sqlite3.connect(DATABASE)
-    cur = con.cursor()
-    cur.execute(query, args)
-    rv = cur.fetchall()
-    con.close()
-    return (rv[0] if rv else None) if one else rv
+    with sqlite3.connect(DATABASE) as con:
+        cur = con.cursor()
+        cur.execute(query, args)
+        rv = cur.fetchall()
+        return (rv[0] if rv else None) if one else rv
 
 @app.route('/query', methods=['POST'])
 def run_query():
